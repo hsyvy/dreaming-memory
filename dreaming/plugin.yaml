@@ -1,0 +1,9 @@
+name: dreaming
+version: 0.2.0
+description: "Dreaming — local memory with transcripts, notes, and an offline pass that corrects notes, builds a linked wiki and keeps a small always-loaded index."
+author: hsyvy
+homepage: https://github.com/hsyvy/dreaming-memory
+requires_hermes: ">=0.23.1"
+hooks:
+  - on_session_end
+  - on_memory_write

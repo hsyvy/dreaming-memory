@@ -1,0 +1,446 @@
+{
+  "_meta": {
+    "model": "gpt-6.1-sol",
+    "hermes": "Hermes Agent v0.23.1+1921.g4ed1425 (2026.9.24) · stable · local 4ed14253ea7b"
+  },
+  "none": {
+    "profile": "loopnone",
+    "tasks": [
+      {
+        "n": 1,
+        "record": "4127",
+        "correct": true,
+        "answer": "cobalt-8871",
+        "reply": "ANSWER: cobalt-8871",
+        "seconds": 32.8,
+        "exit": 0,
+        "stderr": "",
+        "input_tokens": 28516,
+        "output_tokens": 348,
+        "api_calls": 9,
+        "aux_calls": 0,
+        "aux_tokens": 0
+      },
+      {
+        "n": 2,
+        "record": "5302",
+        "correct": true,
+        "answer": "basalt-7747",
+        "reply": "ANSWER: basalt-7747",
+        "seconds": 22.9,
+        "exit": 0,
+        "stderr": "",
+        "input_tokens": 21147,
+        "output_tokens": 250,
+        "api_calls": 7,
+        "aux_calls": 0,
+        "aux_tokens": 0
+      },
+      {
+        "n": 3,
+        "record": "6815",
+        "correct": true,
+        "answer": "cobalt-8279",
+        "reply": "ANSWER: cobalt-8279",
+        "seconds": 30.2,
+        "exit": 0,
+        "stderr": "",
+        "input_tokens": 21778,
+        "output_tokens": 422,
+        "api_calls": 7,
+        "aux_calls": 0,
+        "aux_tokens": 0
+      },
+      {
+        "n": 4,
+        "record": "7240",
+        "correct": true,
+        "answer": "heron-8991",
+        "reply": "ANSWER: heron-8991",
+        "seconds": 24.6,
+        "exit": 0,
+        "stderr": "",
+        "input_tokens": 21148,
+        "output_tokens": 251,
+        "api_calls": 7,
+        "aux_calls": 0,
+        "aux_tokens": 0
+      },
+      {
+        "n": 5,
+        "record": "8356",
+        "correct": true,
+        "answer": "garnet-4308",
+        "reply": "ANSWER: garnet-4308",
+        "seconds": 28.5,
+        "exit": 0,
+        "stderr": "",
+        "input_tokens": 24889,
+        "output_tokens": 333,
+        "api_calls": 8,
+        "aux_calls": 0,
+        "aux_tokens": 0
+      },
+      {
+        "n": 6,
+        "record": "9469",
+        "correct": true,
+        "answer": "dune-2460",
+        "reply": "ANSWER: dune-2460",
+        "seconds": 29.4,
+        "exit": 0,
+        "stderr": "",
+        "input_tokens": 21671,
+        "output_tokens": 422,
+        "api_calls": 7,
+        "aux_calls": 0,
+        "aux_tokens": 0
+      }
+    ],
+    "dreams": [],
+    "memory": {
+      "builtin MEMORY.md": 0,
+      "builtin USER.md": 0
+    }
+  },
+  "base": {
+    "profile": "loopbase",
+    "tasks": [
+      {
+        "n": 1,
+        "record": "4127",
+        "correct": true,
+        "answer": "cobalt-8871",
+        "reply": "ANSWER: cobalt-8871",
+        "seconds": 30.9,
+        "exit": 0,
+        "stderr": "",
+        "input_tokens": 34807,
+        "output_tokens": 348,
+        "api_calls": 9,
+        "aux_calls": 0,
+        "aux_tokens": 0
+      },
+      {
+        "n": 2,
+        "record": "5302",
+        "correct": true,
+        "answer": "basalt-7747",
+        "reply": "ANSWER: basalt-7747",
+        "seconds": 23.2,
+        "exit": 0,
+        "stderr": "",
+        "input_tokens": 26082,
+        "output_tokens": 278,
+        "api_calls": 7,
+        "aux_calls": 0,
+        "aux_tokens": 0
+      },
+      {
+        "n": 3,
+        "record": "6815",
+        "correct": true,
+        "answer": "cobalt-8279",
+        "reply": "ANSWER: cobalt-8279",
+        "seconds": 29.7,
+        "exit": 0,
+        "stderr": "",
+        "input_tokens": 26671,
+        "output_tokens": 422,
+        "api_calls": 7,
+        "aux_calls": 0,
+        "aux_tokens": 0
+      },
+      {
+        "n": 4,
+        "record": "7240",
+        "correct": true,
+        "answer": "heron-8991",
+        "reply": "ANSWER: heron-8991",
+        "seconds": 28.7,
+        "exit": 0,
+        "stderr": "",
+        "input_tokens": 26672,
+        "output_tokens": 423,
+        "api_calls": 7,
+        "aux_calls": 0,
+        "aux_tokens": 0
+      },
+      {
+        "n": 5,
+        "record": "8356",
+        "correct": true,
+        "answer": "garnet-4308",
+        "reply": "ANSWER: garnet-4308",
+        "seconds": 31.7,
+        "exit": 0,
+        "stderr": "",
+        "input_tokens": 30481,
+        "output_tokens": 333,
+        "api_calls": 8,
+        "aux_calls": 0,
+        "aux_tokens": 0
+      },
+      {
+        "n": 6,
+        "record": "9469",
+        "correct": true,
+        "answer": "dune-2460",
+        "reply": "ANSWER: dune-2460",
+        "seconds": 29.0,
+        "exit": 0,
+        "stderr": "",
+        "input_tokens": 30373,
+        "output_tokens": 332,
+        "api_calls": 8,
+        "aux_calls": 0,
+        "aux_tokens": 0
+      }
+    ],
+    "dreams": [],
+    "memory": {
+      "builtin MEMORY.md": 0,
+      "builtin USER.md": 0
+    }
+  },
+  "raw": {
+    "profile": "loopraw",
+    "tasks": [
+      {
+        "n": 1,
+        "record": "4127",
+        "correct": true,
+        "answer": "cobalt-8871",
+        "reply": "ANSWER: cobalt-8871",
+        "seconds": 27.5,
+        "exit": 0,
+        "stderr": "",
+        "input_tokens": 29679,
+        "output_tokens": 422,
+        "api_calls": 7,
+        "aux_calls": 0,
+        "aux_tokens": 0
+      },
+      {
+        "n": 2,
+        "record": "5302",
+        "correct": true,
+        "answer": "basalt-7747",
+        "reply": "ANSWER: basalt-7747",
+        "seconds": 19.6,
+        "exit": 0,
+        "stderr": "",
+        "input_tokens": 26135,
+        "output_tokens": 243,
+        "api_calls": 6,
+        "aux_calls": 0,
+        "aux_tokens": 0
+      },
+      {
+        "n": 3,
+        "record": "6815",
+        "correct": true,
+        "answer": "cobalt-8279",
+        "reply": "ANSWER: cobalt-8279",
+        "seconds": 24.7,
+        "exit": 0,
+        "stderr": "",
+        "input_tokens": 32064,
+        "output_tokens": 264,
+        "api_calls": 7,
+        "aux_calls": 0,
+        "aux_tokens": 0
+      },
+      {
+        "n": 4,
+        "record": "7240",
+        "correct": true,
+        "answer": "heron-8991",
+        "reply": "ANSWER: heron-8991",
+        "seconds": 20.9,
+        "exit": 0,
+        "stderr": "",
+        "input_tokens": 27960,
+        "output_tokens": 216,
+        "api_calls": 6,
+        "aux_calls": 0,
+        "aux_tokens": 0
+      },
+      {
+        "n": 5,
+        "record": "8356",
+        "correct": true,
+        "answer": "garnet-4308",
+        "reply": "ANSWER: garnet-4308",
+        "seconds": 27.9,
+        "exit": 0,
+        "stderr": "",
+        "input_tokens": 33294,
+        "output_tokens": 296,
+        "api_calls": 7,
+        "aux_calls": 0,
+        "aux_tokens": 0
+      },
+      {
+        "n": 6,
+        "record": "9469",
+        "correct": true,
+        "answer": "dune-2460",
+        "reply": "ANSWER: dune-2460",
+        "seconds": 23.8,
+        "exit": 0,
+        "stderr": "",
+        "input_tokens": 33186,
+        "output_tokens": 295,
+        "api_calls": 7,
+        "aux_calls": 0,
+        "aux_tokens": 0
+      }
+    ],
+    "dreams": [],
+    "memory": {
+      "builtin MEMORY.md": 0,
+      "builtin USER.md": 0,
+      "notes files": 0,
+      "notes chars": 0,
+      "wiki files": 0,
+      "wiki chars": 0,
+      "index.md chars": 0,
+      "index.md lines": 0,
+      "transcript chars": 12971
+    }
+  },
+  "dream": {
+    "profile": "loopdream",
+    "tasks": [
+      {
+        "n": 1,
+        "record": "4127",
+        "correct": true,
+        "answer": "cobalt-8871",
+        "reply": "ANSWER: cobalt-8871",
+        "seconds": 28.0,
+        "exit": 0,
+        "stderr": "",
+        "input_tokens": 29676,
+        "output_tokens": 388,
+        "api_calls": 7,
+        "aux_calls": 0,
+        "aux_tokens": 0
+      },
+      {
+        "n": 2,
+        "record": "5302",
+        "correct": true,
+        "answer": "basalt-7747",
+        "reply": "ANSWER: basalt-7747",
+        "seconds": 11.5,
+        "exit": 0,
+        "stderr": "",
+        "input_tokens": 13431,
+        "output_tokens": 174,
+        "api_calls": 3,
+        "aux_calls": 0,
+        "aux_tokens": 0
+      },
+      {
+        "n": 3,
+        "record": "6815",
+        "correct": true,
+        "answer": "cobalt-8279",
+        "reply": "ANSWER: cobalt-8279",
+        "seconds": 12.5,
+        "exit": 0,
+        "stderr": "",
+        "input_tokens": 13851,
+        "output_tokens": 120,
+        "api_calls": 3,
+        "aux_calls": 0,
+        "aux_tokens": 0
+      },
+      {
+        "n": 4,
+        "record": "7240",
+        "correct": true,
+        "answer": "heron-8991",
+        "reply": "ANSWER: heron-8991",
+        "seconds": 13.7,
+        "exit": 0,
+        "stderr": "",
+        "input_tokens": 14809,
+        "output_tokens": 175,
+        "api_calls": 3,
+        "aux_calls": 0,
+        "aux_tokens": 0
+      },
+      {
+        "n": 5,
+        "record": "8356",
+        "correct": true,
+        "answer": "garnet-4308",
+        "reply": "ANSWER: garnet-4308",
+        "seconds": 13.7,
+        "exit": 0,
+        "stderr": "",
+        "input_tokens": 15046,
+        "output_tokens": 175,
+        "api_calls": 3,
+        "aux_calls": 0,
+        "aux_tokens": 0
+      },
+      {
+        "n": 6,
+        "record": "9469",
+        "correct": true,
+        "answer": "dune-2460",
+        "reply": "ANSWER: dune-2460",
+        "seconds": 12.5,
+        "exit": 0,
+        "stderr": "",
+        "input_tokens": 15091,
+        "output_tokens": 174,
+        "api_calls": 3,
+        "aux_calls": 0,
+        "aux_tokens": 0
+      }
+    ],
+    "dreams": [
+      {
+        "llm_calls": 2,
+        "seconds": 15.6,
+        "summary": "dreamed 1 session(s) in 14s with 2 model call(s): 2 file(s) written, 0 deleted"
+      },
+      {
+        "llm_calls": 2,
+        "seconds": 17.4,
+        "summary": "dreamed 1 session(s) in 15s with 2 model call(s): 2 file(s) written, 0 deleted"
+      },
+      {
+        "llm_calls": 2,
+        "seconds": 18.2,
+        "summary": "dreamed 1 session(s) in 16s with 2 model call(s): 2 file(s) written, 0 deleted"
+      },
+      {
+        "llm_calls": 2,
+        "seconds": 20.7,
+        "summary": "dreamed 1 session(s) in 18s with 2 model call(s): 2 file(s) written, 0 deleted"
+      },
+      {
+        "llm_calls": 2,
+        "seconds": 21.4,
+        "summary": "dreamed 1 session(s) in 19s with 2 model call(s): 2 file(s) written, 0 deleted"
+      }
+    ],
+    "memory": {
+      "builtin MEMORY.md": 0,
+      "builtin USER.md": 0,
+      "notes files": 0,
+      "notes chars": 0,
+      "wiki files": 1,
+      "wiki chars": 1682,
+      "index.md chars": 368,
+      "index.md lines": 5,
+      "transcript chars": 8057
+    }
+  }
+}
