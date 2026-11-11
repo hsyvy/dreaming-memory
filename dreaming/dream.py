@@ -173,17 +173,34 @@ class Dreamer:
         try:
             fd = os.open(self.lock_path, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
         except FileExistsError:
-            try:
-                stale = time.time() - self.lock_path.stat().st_mtime > 3600
-            except FileNotFoundError:
-                stale = True
-            if not stale:
+            if not self._lock_is_stale():
                 return False
             self.lock_path.unlink(missing_ok=True)
             return self._acquire()
         os.write(fd, str(os.getpid()).encode())
         os.close(fd)
         return True
+
+    def _lock_is_stale(self) -> bool:
+        """A lock is stale after an hour, or as soon as the process that took it is gone
+        (a one-shot `hermes -z` run can exit in the middle of a background pass)."""
+        try:
+            if time.time() - self.lock_path.stat().st_mtime > 3600:
+                return True
+            pid = int(self.lock_path.read_text(encoding="utf-8").strip() or 0)
+        except (FileNotFoundError, ValueError):
+            return True
+        if pid <= 0:
+            return True
+        if os.name != "posix":  # os.kill(pid, 0) would terminate the process on Windows
+            return False
+        try:
+            os.kill(pid, 0)
+        except ProcessLookupError:
+            return True
+        except PermissionError:
+            return False
+        return False
 
     # ---------------------------------------------------------------- helpers
 

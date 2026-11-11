@@ -205,6 +205,23 @@ class DreamTests(unittest.TestCase):
         self.assertEqual(len(self.store.read("index.md").splitlines()), 40)
         self.assertEqual(sum("rejected" in line for line in report.log), 4)
 
+    def test_lock_left_by_a_dead_process_is_released(self):
+        import subprocess
+        dreamer = Dreamer(self.store, FakeLLM({}))
+        dead = subprocess.Popen([sys.executable, "-c", "pass"])
+        dead.wait()
+        dreamer.lock_path.parent.mkdir(parents=True, exist_ok=True)
+        dreamer.lock_path.write_text(str(dead.pid))
+        self.assertTrue(dreamer._acquire())
+        dreamer.lock_path.unlink()
+
+    def test_lock_held_by_a_live_process_is_respected(self):
+        dreamer = Dreamer(self.store, FakeLLM({}))
+        dreamer.lock_path.parent.mkdir(parents=True, exist_ok=True)
+        dreamer.lock_path.write_text(str(os.getpid()))
+        self.assertFalse(dreamer._acquire())
+        dreamer.lock_path.unlink()
+
     def test_dream_repairs_broken_links(self):
         self.store.append_turn("s1", "tell me about kestrel", "Kestrel owns billing.")
         llm = FakeLLM({

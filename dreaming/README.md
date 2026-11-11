@@ -85,8 +85,9 @@ other sessions and their order. Once a session is dreamed, recall stops showing 
 speaks for it); it stays searchable with `mem_search`.
 
 By default (`auto_dream: true`) a pass also starts in the background when a new session begins and
-earlier sessions have un-dreamed turns. Set `auto_dream` to `false` to dream only on demand or from
-a scheduler (for example a nightly `hermes dreaming dream` cron job).
+earlier sessions have un-dreamed turns. A one-shot run (`hermes -z`) can exit before that pass
+finishes; nothing is lost, and the pass runs again at the next session. Set `auto_dream` to `false`
+to dream only on demand or from a scheduler (for example a nightly `hermes dreaming dream` cron job).
 
 ### Commands
 
